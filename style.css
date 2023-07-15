@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Open+Sans:wght@300;400;600;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --indigo: #51087e;
+  --russian: #461257;
+  --button1: #d7a1f9;
+  --dpurple: #4B0082;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* navbar */
+nav {
+  background-color: var(--indigo);
+  padding: 0.8em 0;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.logo h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+.navBar .links a
+{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in-out;
+}
+.navBar .links a:hover
+{
+  border-bottom: 2px solid #fff;
+  transition: 0.2s ease-in-out;
+}
+.navBar .links
+{
+  display: flex;
+  gap: 2em;
+}
+
+/* main section */
+.mainSection {
+  height: 100vh;
+  background-image: url(./images/main.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #fff;
+}
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+.mainSection h1 {
+  font-size: 4.5rem;
+}
+.mainSection h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+/* trial section */
+.trial
+{
+  background: linear-gradient(#5F0A87, #A4508B);
+  color: #fff;
+  display: flex;
+  text-align: center;
+}
+.trial h1 
+{
+  margin: 1em 0 0.4em 0;
+  font-size: 2.2rem;
+}
+.trial h3
+{
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+  font-weight: 400;
+}
+.trial p
+{
+  width: 70%;
+  margin: 0 auto;
+  font-weight: 300;
+  margin-bottom: 1.3em;
+}
+.trial .trialBtn
+{
+  background-color: #BF3A30;
+  padding: 0.5em 1em;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  margin-bottom: 1.3em;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.trial .trialBtn:hover
+{
+  background-color: #c2180c;
+  transition: 0.2s ease-in-out;
+}
+.trial h6
+{
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+.trial img
+{
+  position: relative;
+  top: 35%;
+  margin-top: -16.5em;  
+}
+
+/* read more section */
+.readMore
+{
+  text-align: center;
+  padding-top: 20em;
+  background: linear-gradient(rgb(221, 194, 255), #ff5da8);
+}
+.readMore h2
+{
+  margin-bottom: 1.1em;
+}
+.readMore p
+{
+  width: 70%;
+  margin: 0 auto;
+}
+.readMore .read
+{
+  display: block;
+  margin: 2.2em auto 0 auto;
+  background-color: #5F0A87;
+  color: #fff;
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  border: none;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.readMore .read:hover
+{
+  background-color: #8b12c3;
+  transition: 0.2s ease-in-out;
+}
+.readMore img
+{
+  width: 70%; 
+}
+
+/* video section */
+.video
+{
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+  padding: 5em 0;
+  background: linear-gradient(304deg, rgb(244, 213, 157) 0%, rgb(241, 99, 184) 48%, rgb(237, 161, 80) 100%);
+}
+.video video
+{
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 0.7rem;
+}
+
+/* gift card section */
+.giftColor
+{
+  background-image: radial-gradient( circle 588px at 31.7% 40.2%,  rgba(225,200,239,1) 21.4%, rgba(163,225,233,1) 57.1% );
+}
+.giftCards
+{
+  display: grid;
+  place-items: center;
+}
+.giftCard
+{
+  display: flex;
+  margin: 5em 0;
+  gap: 1em;
+  justify-content: center;
+}
+.giftCard .logoCard img
+{
+  max-width: 30vw;
+  max-height: 30vh;
+}
+.cardContent
+{
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+  width: 50%;
+}
+.giftCards .cardContent p a
+{
+  text-decoration: none;
+  color: #000;
+}
+.giftCards .cardContent button
+{
+  width: 20%;
+  padding: 0.5em 0;
+  border: none;
+  background-color: rgb(64, 215, 207);
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.giftCards .cardContent button:hover
+{
+  background-color: rgb(0, 252, 240);
+  transition: 0.2s ease-in-out;
+}
+
+/* collection section */
+.collectionColor
+{
+  background-image: linear-gradient( 64.5deg,  rgba(245,116,185,1) 14.7%, rgba(89,97,223,1) 88.7% );
+}
+.collection .services a
+{
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+.collection .services a:hover
+{
+  color: rgb(21, 21, 21);
+  transition: 0.2s ease-in-out;
+}
+.collection
+{
+  display: flex;
+  padding: 2em 1em;
+  gap: 1.8em;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.service
+{
+  width: 40%;
+}
+.heading
+{
+  font-weight: 300;
+  margin-bottom: 1em;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fff;
+}
+.services
+{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+/* Copyright section */
+.copyColor
+{
+  background-image: linear-gradient( 110.1deg,  rgba(30,2,83,1) 44.2%, rgba(198,55,160,1) 138.2% );
+}
+.copyRight
+{
+  padding: 0.8em 0;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* media query */
+@media (max-width: 720px)
+{
+  .logo h1 
+  {
+    font-size: 1.4rem;
+  }
+  .navBar .links a
+  {
+    font-size: 0.8rem;
+  }
+  .navBar .links
+  {
+    flex-direction: column;
+    gap: 0.2em;
+  }
+  .trial img
+  { 
+    width: 100%;
+  }
+  .video video
+  {
+    width: 100%;
+  }
+  .mainSection
+  {
+    height: 100vh;
+  }
+  .mainSection h1 {
+    font-size: 2.5rem;
+  }
+  .mainSection h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .mainSection p
+  {
+    font-weight: 200;
+  }
+  .trial
+  {
+    height: 58vh;
+  }
+  .trial h1 
+  {
+    font-size: 1.5rem;
+  }
+  .trial h3
+  {
+    font-size: 1.1rem;
+    margin-bottom: 0.8em;
+  }
+  .trial p
+  {
+    width: 100%;
+    font-weight: 200;
+  }
+  .trial .trialBtn
+  {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 1em;
+  }
+  .trial img
+  {
+    position: relative;
+    top: 40%;
+  }
+  .trial h6
+  {
+    font-size: 0.7rem;
+    font-weight: 100;
+  }
+  .readMore
+  {
+    padding-top: 9em;
+  }
+  .readMore h2
+  {
+    font-size: 1.2rem;
+  }
+  .readMore p
+  {
+    width: 100%;
+  }
+  .readMore .read
+  {
+    margin: 2em auto 1.5em auto;
+    font-size: 0.8rem;
+  }
+  .readMore img
+  {
+    width: 100%; 
+  } 
+  .video
+  {
+    min-height: 50vh;
+  }
+  .giftCard
+  {
+    flex-direction: column;
+    margin: 2em 0;
+    align-items: center;
+  }
+  .giftCard .logoCard img
+  {
+    max-width: 80%;
+  }
+  .cardContent
+  {
+    width: 95%;
+  }
+  .giftCards .cardContent button
+  {
+    width: 35%;
+    padding: 0.3em 0;
+    font-size: 1rem;
+  }
+  .collection
+  {
+    flex-direction: column;
+    gap: 1.2em;
+  }
+  .service
+  {
+    width: 95%;
+  }
+  .heading
+  {
+    font-size: 0.8rem;
+  }
+}
